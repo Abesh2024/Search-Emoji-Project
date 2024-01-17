@@ -37,38 +37,18 @@ function displayResult(searchQuery= ""){
     //shoing the filtered data 
     filteredData.forEach((e)=>{
 
-        //making the elements in js 
-        let new_row = document.createElement("tr");
-        let new_emoji = document.createElement("td");
-        let new_aliases = document.createElement("td");
-        let new_desc = document.createElement("td");
-
-
-        //giving the innerText to elements
-        new_emoji.innerText = e.emoji;
-        new_aliases.innerText = e.aliases;
-        new_desc.innerText = e.description;
-
-        // new_row.classList.add("emoji");
-        // new_desc.classList.add("desc");
-        // new_aliases.classList.add("aliases");
-
-        // console.log(new_emoji,new_aliases,new_desc);
-
-
-        //appending those tds to the tr
-        new_row.appendChild(new_emoji);
-        new_row.appendChild(new_aliases);
-        new_row.appendChild(new_desc);
-
-        //appending the tr to parent (tbody)
-        parent.appendChild(new_row);
+        let Box = document.createElement("div");
+        Box.classList.add("box");
+        // let Aliases = e.aliases.join(" ");
+        Box.innerHTML=`
+            <p class="Emojyy">${e.emoji}</p>
+            <p class ="aliases">${e.aliases}</p>
+            <p class="desc">${e.description}</p>
+        `
+        parent.appendChild(Box);
     })
 }
 
-// console.log(emojiList);
-
-//keyup event is applied here
 document.getElementById("search_field").addEventListener("keyup", searchEmoji)
 
 //first time to show all the emojis
