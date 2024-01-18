@@ -90,7 +90,7 @@ input[type=submit]:hover{
     padding: 5px;
     text-align: center;
     border-radius: 10px;
-    box-shadow: 6px 6px 10px #0d080c;
+    box-shadow: 5px 5px 10px #0d080c;
     cursor: pointer;
     background-color: #d4d4c8;
     overflow: auto;
