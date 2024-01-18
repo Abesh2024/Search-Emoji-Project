@@ -8,7 +8,7 @@ function searchEmoji(){
 
 
 //displaying the meojis from here
-function displayResult(searchQuery= ""){
+function displayResult(searchQuery=""){
 
     //filtering the emojis with filter on the basis of tags, aliases, desc
     let filteredData = emojiList.filter((e)=>{
