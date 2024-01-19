@@ -25,7 +25,7 @@ function displayResult(searchQuery=""){
         }
     })
 
-    console.log(filteredData);
+    // console.log(filteredData);
 
     //where we need to append the tr
     let parent = document.getElementById("search_result_container");
