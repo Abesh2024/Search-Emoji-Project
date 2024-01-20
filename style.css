@@ -13,24 +13,34 @@ body,h2,h3,h4,h5,h6,p{
     font-family: "arial";
 }
 
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 h1 {
     font-family: 'Roboto Mono', monospace;
     font-weight: bold;
-    color: black;
+    /* color: black; */
+}
+
+#span {
+    color: #e0e6ee;
 }
 
 .animate {
-    animation: animate 3s ease-in-out 2s infinite normal both;
+    animation: animate 4s ease-in-out 2s infinite normal both;
 
     transform: translateX(-90px);
+    color: #333333;
 }
 
 @keyframes animate {
     from {
-        transform: translateX(-200px);
+        transform: translateX(-100px) scale(1.5);
     }
     to {
-        transform: translateX(0);
+        transform: translateX(80px) scale(1.3);
     }
 }
 
